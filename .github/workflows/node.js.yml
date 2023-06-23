@@ -4,10 +4,20 @@
 name: Node.js CI
 
 on:
+   workflow_dispatch:  
+    inputs:
+      branch to run:
+        required: false
+        type: string
+        default: master
+   workflow_call:
+     inputs:
+        branch to run:
+          required: false
+          type: string
+          default: master  
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: acttions
 
 jobs:
   build:
