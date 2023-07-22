@@ -1,3 +1,4 @@
+@TT
 Feature: Math Operations
   Scenario: Addition
     Given I have entered 50 into the calculator
